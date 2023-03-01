@@ -39,3 +39,4 @@ TEST(MathTests, testDivideZeroNumerator) {
 TEST(MathTests, testCalculateCase1) {
     EXPECT_EQ(calculate(2,3), -5);
 }
+

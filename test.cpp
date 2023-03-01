@@ -1,8 +1,6 @@
 #include "gtest/gtest.h"
-#include "gmock/gmock.h"
 #include "math.h"
 using namespace math;
-using ::testing::InSequence;
 
 // full list of gtest assertions can be found here:
 // http://google.github.io/googletest/reference/assertions.html

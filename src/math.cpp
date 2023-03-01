@@ -14,8 +14,8 @@ double math::multiply(double term1, double term2) {
 }
 
 double math::divide(double numerator, double denominator) {
-	return numerator / denominator;
 	assert(denominator != 0 && "ERROR: divide by zero");
+	return numerator / denominator;
 }
 
 double math::calculate(double term1, double term2) {

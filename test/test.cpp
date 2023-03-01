@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "math.h"
+#include "../src/math.h"
 using namespace math;
 
 // full list of gtest assertions can be found here:

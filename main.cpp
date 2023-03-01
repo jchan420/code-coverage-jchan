@@ -1,5 +1,5 @@
 #include <iostream>
-#include "math.h"
+#include "src/math.h"
 using namespace math;
 
 int main() {

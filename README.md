@@ -2,7 +2,7 @@
 
 How to manually generate code coverage on the main executable:
 
-1. Compile using the following flag: `g++ -Wall -fprofile-arcs -ftest-coverage math.cpp main.cpp -o main`
+1. Compile using the following flag: `g++ -Wall -fprofile-arcs -ftest-coverage src/math.cpp main.cpp -o main`
 
 	* `-Wall` enables all compiler warnings, which as good coders we should always do.
 	* `-fprofile-arcs` is the flag that enables the recording of which lines of codes are executed and how many times.
@@ -23,17 +23,17 @@ How to generate code coverage using unit tests:
 
 2. Run the `./bin/test` executable once.
 
-3. Enter the `CMakeFiles/test.dir/` directory in your terminal.
+3. Enter the `CMakeFiles/test.dir/src` directory in your terminal.
 
 4. Run `gcov math.cpp.gcno`
 
-5. generate html report using the following terminal commands within `CMakeFiles/test.dir/`:
+5. generate html report using the following terminal commands within `CMakeFiles/test.dir/src`:
 
 ```
 lcov --capture --directory . --output-file gtest_coverage.info
 genhtml gtest_coverage.info --output-directory CODE_COVERAGE
 ```
 
-6. download the `CODE_COVERAGE` file that was just generated to your local computer.
+6. download the `CODE_COVERAGE` folder that was just generated to your local computer.
 
 7. double click and run `index.html` on your local computer.

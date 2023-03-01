@@ -4,12 +4,12 @@ bin/
 cmake_install.cmake
 CMakeCache.txt
 Makefile
-test
 main
 
 *gcno
 *gcov
 *gcda
+*exe
 
 googletest-build/
 googletest-download/

@@ -40,10 +40,10 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
     include_directories("${gtest_SOURCE_DIR}/include")
 endif ()
 
-set(SOURCE_FILES math.cpp)
+set(SOURCE_FILES src/math.cpp)
 add_executable(main main.cpp ${SOURCE_FILES})
 
-set(TEST_FILES test.cpp math.cpp)
+set(TEST_FILES test/test.cpp src/math.cpp)
 add_executable(test ${TEST_FILES} ${SOURCE_FILES})
 
 target_link_libraries(test gtest gtest_main)

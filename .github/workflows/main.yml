@@ -36,7 +36,7 @@ jobs:
       - name: Coverage
         working-directory: ${{runner.workspace}}/build
         shell: bash
-        run: make coverage
+        run: make all
 
       - name: Coveralls
         uses: coverallsapp/github-action@master

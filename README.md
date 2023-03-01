@@ -27,7 +27,7 @@ How to generate code coverage using unit tests:
 
 4. Run `gcov math.cpp.gcno`
 
-5. generate html report using the following terminal commands within `CMakeFiles/test.dir/src`:
+5. generate html report within `CMakeFiles/test.dir/src` by using the following terminal commands:
 
 ```
 lcov --capture --directory . --output-file gtest_coverage.info

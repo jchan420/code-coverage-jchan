@@ -23,6 +23,8 @@ How to generate code coverage using unit tests:
 
 2. Run the `./bin/test` executable once.
 
+	* Note: every time you run the executable, it adds the line counts from the current execution onto the previous executions. to reset the line counts to zero, type `lcov --zerocounters --directory .`
+
 3. Enter the `CMakeFiles/test.dir/src` directory in your terminal.
 
 4. Run `gcov math.cpp.gcno`

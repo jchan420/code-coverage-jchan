@@ -10,6 +10,8 @@ How to manually generate code coverage on the main executable:
 
 2. Run the `main` executable once.
 
+	* Note: every time you run the executable, it adds the line counts from the current execution onto the previous executions. to reset the line counts to zero, type `lcov --zerocounters --directory .`
+
 3. Run `gcov main.cpp` and `gcov math.cpp` to generate .gcov files
 
 4. View code coverage within `main.cpp.gcov` and `math.cpp.gcov`
@@ -22,8 +24,6 @@ How to generate code coverage using unit tests:
 	* CMakeLists.txt.in has special information for using the googletest submodule with gcov
 
 2. Run the `./bin/test` executable once.
-
-	* Note: every time you run the executable, it adds the line counts from the current execution onto the previous executions. to reset the line counts to zero, type `lcov --zerocounters --directory .`
 
 3. Enter the `CMakeFiles/test.dir/src` directory in your terminal.
 

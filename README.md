@@ -1,8 +1,10 @@
-This repository is used to demonstrate how to use gcov to generate code coverage reports.
-
 # Code-Coverage-Demo
 
-How to manually generate code coverage on the main executable:
+This repository is used to demonstrate how to use gcov to generate code coverage reports.
+
+
+
+# How to manually generate code coverage on the main executable:
 
 1. Compile using the following flag: `g++ -Wall -fprofile-arcs -ftest-coverage src/math.cpp main.cpp -o main`
 
@@ -19,7 +21,7 @@ How to manually generate code coverage on the main executable:
 4. View code coverage within `main.cpp.gcov` and `math.cpp.gcov`
 
 
-How to generate code coverage using unit tests:
+# How to generate code coverage using gtest unit tests:
 
 1. Run `cmake .` and `make` for this repo
 

@@ -1,3 +1,5 @@
+This repository is used to demonstrate how to use gcov to generate code coverage reports.
+
 # Code-Coverage-Demo
 
 How to manually generate code coverage on the main executable:

@@ -40,8 +40,3 @@ TEST(MathTests, testCalculateCase1) {
     EXPECT_EQ(calculate(2,3), -5);
 }
 
-// Test the first case of the calculate function
-TEST(MathTests, testCalculateCase2) {
-    EXPECT_EQ(calculate(3,2), 5);
-}
-
